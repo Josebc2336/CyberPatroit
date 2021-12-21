@@ -6,3 +6,5 @@ echo -e "deb-src http://archive.ubuntu.com/ubuntu $(lsb_release -cs) main univer
 echo -e "deb http://security.ubuntu.com/ubuntu/ $(lsb_release -cs)-security restricted main multiverse universe" >> /etc/apt/sources.list
 echo -e "deb http://archive.ubuntu.com/ubuntu $(lsb_release -cs)-updates restricted main multiverse universe" >> /etc/apt/sources.list
 echo -e "deb http://archive.ubuntu.com/ubuntu $(lsb_release -cs)-backports restricted main multiverse universe" >> /etc/apt/sources.list
+sudo apt update 
+sudo apt upgrade -y
